@@ -1,0 +1,97 @@
+@import '../../../assets/styles/mixins';
+@import '../../../assets//styles//variables';
+
+.auth-div{
+    height: 100vh;
+    background-color: $bgcolor;
+    @include justifyCenter(row,center,center);
+}
+.border{
+    border: solid 1px $borderColor;
+    border-radius: 3px;
+}
+.input-label-div-login{
+    position: relative;
+    overflow: hidden;
+    margin: 15px 0;
+    border-radius: 30px;
+    
+    height: 3rem;
+    .inp-label{
+        position: absolute;
+        top :1rem;
+        font-size: 0.8rem;
+        left:10px;
+        color: rgba(white,0.5);
+        transition: all 0.2s;
+    }
+    .inp{
+        width: 100%;
+        border-radius: 5px;
+        height: 100%;
+        bottom: 0;
+        padding-top:2% ;
+        padding-left: 8px;
+        background-color: black;
+    color: white;
+        font-size:0.8rem;
+        /* transition: all linear 0.1s; */
+        border: solid 1px rgba(27, 9, 9, 0.1);
+    }
+    button{
+        position: absolute;
+        right: 0;
+        /* width: 100%; */
+        height: 100%;
+        background: none;
+        border: none;
+        color: white;
+        &:focus{
+            outline: none;
+        }
+    }
+    
+    .inp:disabled +.inp-label{
+        outline: none;
+        color:white;
+        top:0;
+        font-size: 0.7rem;
+    }
+    .inp:valid +.inp-label {
+        outline: none;
+        color:white;
+        top:0;
+        font-size: 0.7rem;
+    }
+    .inp:focus +.inp-label{
+        outline: none;
+        color:white;
+        top:0;
+        font-size: 0.7rem;
+    }
+}
+
+.box{
+    border: 1px solid $borderColor;
+    background-color: white;
+    width: 300px;
+    padding: 20px;
+    @media only screen and (max-width: 600px) {
+        // width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+}
+
+.login-btn{
+    width: 100%;
+
+    padding: 10px;
+    border: none;
+    margin-top: 20px;
+    background-color: $btn1Bg !important;
+    color: #fff!important;
+    border-radius: 50px!important;
+    font-size: 16px!important;
+}

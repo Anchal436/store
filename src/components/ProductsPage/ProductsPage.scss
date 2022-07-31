@@ -1,0 +1,25 @@
+@import '../../assets/styles/mixins';
+@import '../../assets/styles/variables';
+
+.bottom-navigation-tab-icon{
+    position: relative;
+    
+    img{
+        width: 25px;
+    }
+    .unread-notification-num{
+        position: absolute;
+        background-color: red;
+        color: white;
+        padding: 5px;
+        border-radius: 50%;
+        font-weight: bold;
+        top:-5px;
+        right: -10px;
+        font-size: 0.75rem;
+        margin: 0;
+    }
+    @media(max-width : 600px){
+        width: 25px;
+    }
+}

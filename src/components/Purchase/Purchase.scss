@@ -1,0 +1,98 @@
+@import '../../assets/styles/mixins';
+@import '../../assets/styles/variables';
+.purchase-main-div{
+    
+    min-height:90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    border-radius: 5px;
+    .purchase-div{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        justify-content: space-between;
+        border : 3px solid $primaryColor;
+        border-radius: 10px;
+        padding: 15px;
+        align-items: center;
+        box-shadow: 0 20px 50px 0 rgba(0, 0,0, 0.5);
+        background-color: white;
+        color: black;
+        .purchase-content-div{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            h1{
+                color: $primaryColor;
+
+            }
+            .purchase-price-div{
+                z-index: 200;
+                h1{
+                    margin: 0;
+                    font-weight: bold;
+                    // color: white;
+                    span{
+                        font-size: 1rem;
+                    }
+                }
+            }
+            @media (max-width:600px){
+                & h1{
+                    font-size: 1.3rem;
+                }
+                .purchase-price-div h1{
+                    color: black;
+                    font-size: 1.1rem;
+                    
+                }
+            }
+        }
+        .purchase-total-div{
+            border-top: 1px solid gray;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            p{
+                font-size: 1.5rem;
+                font-weight: bolder;
+            }
+        }
+        
+    }
+
+    .purchase-button-div{
+        display: flex;
+        margin-top: 2rem;
+        justify-content: center;
+        button{
+            background: none;
+            background-color: #0095f6;
+            margin: 10px;
+            width: 18rem;
+            padding: 15px;
+            border: none;
+            color: white;
+            font-weight: bold;
+            border-radius: 3px;
+            cursor: pointer;
+            transition: all ease 0.5s;
+            box-shadow: 0 20px 50px 0 rgba(0, 83, 213, 0.5);
+        }
+        @media (max-width:600px){
+            flex-direction: column;
+        }
+    }
+    
+}

@@ -1,0 +1,61 @@
+@import '../../../assets/styles/mixins';
+@import '../../../assets/styles/variables';
+
+.public-page-footer{
+    background-color: $homepageBackgroundColor;
+    padding: 10px 0;
+    bottom: 0;
+    position: relative;
+    z-index: 2;
+    @media (max-width:600px) {
+        // padding: 20px;
+        text-align: center;
+    }
+    .footer-logo{
+        padding-bottom: 5px;
+    }
+    .content{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        padding:5px 50px;
+        small{
+            max-width: 200px;
+            margin: 5px;
+            display: block;
+        }
+        @media (max-width:600px) {
+            flex-direction: column-reverse;
+            small{
+                width: 100%;
+                text-align: center;
+            }
+        }
+    }
+    .footer-link{
+        display: flex;
+        align-items: center;
+        padding : 5px 0;
+        img{
+            width: auto;
+            height: 40px;
+        }
+    }
+    .footer-payment-options{
+        display: flex;
+        justify-content: space-evenly;
+        margin: auto;
+        width: 100%;
+        align-items: center;
+        flex-wrap: wrap;
+        background-color: white;
+        .payment-option{
+            img{
+                width: 40px;
+                margin: 0 10px;
+            }
+
+        }
+    }
+}

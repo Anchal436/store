@@ -1,0 +1,54 @@
+@import '../../assets/styles/mixins';
+@import '../../assets/styles/variables';
+// .admin-bg{
+//     background-color: rgba(black,0.05);
+//     min-height: 100vh;
+//     margin-left: 150px;
+   
+//     @media (max-width:600px){
+//         margin-left: 0px;
+//         & article{
+//             // width: 100%;
+//         }
+//     }
+// }
+
+.render-links-div{
+    max-height:75vh;
+    
+    overflow-y: scroll;
+    @media (max-width:600px){
+        max-width: 100vh;
+        overflow-y: initial;
+    }
+}
+.copied-succes-div{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(black,0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+    p{
+        background: -webkit-linear-gradient(left,rgb(1, 253, 22),rgb(207, 8, 8),rgb(70, 14, 255));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+              overflow-wrap: break-word;   
+              font-weight: 900;
+    }
+    svg{
+        width: 120px;
+        height: 120px;
+    }
+    color: white;
+    font-weight: bold;
+    @media (max-width:600px){
+        svg{
+            width: 30px;
+            height: 30px;
+        }
+        font-size: 2rem;
+    }
+}

@@ -1,0 +1,54 @@
+.render-links-div {
+  max-height: 75vh;
+  overflow-y: scroll;
+}
+
+@media (max-width: 600px) {
+  .render-links-div {
+    max-width: 100vh;
+    overflow-y: initial;
+  }
+}
+
+.copied-succes-div {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 5rem;
+  color: white;
+  font-weight: bold;
+}
+
+.copied-succes-div p {
+  background: -webkit-linear-gradient(left, #01fd16, #cf0808, #460eff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  overflow-wrap: break-word;
+  font-weight: 900;
+}
+
+.copied-succes-div svg {
+  width: 120px;
+  height: 120px;
+}
+
+@media (max-width: 600px) {
+  .copied-succes-div {
+    font-size: 2rem;
+  }
+  .copied-succes-div svg {
+    width: 30px;
+    height: 30px;
+  }
+}
+/*# sourceMappingURL=AdminPage.css.map */

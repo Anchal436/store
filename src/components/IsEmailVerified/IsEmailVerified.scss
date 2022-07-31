@@ -1,0 +1,31 @@
+@import '../../assets/styles/mixins';
+@import '../../assets/styles/variables';
+.isVerified-div{
+    background-color:rgb(80, 118, 245);
+    
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    transition: all ease 0.5s;
+    p{
+        font-size: $normalTextSize;
+        color: white;
+        @media (max-width: 600px){
+            font-size: 0.7rem;
+        }
+        b{
+            color: greenyellow;   
+        }
+    }
+    button{
+        @include plainbtn();
+        border: none;
+        color: white;
+        @media (max-width: 600px){
+            font-size: 0.8rem;
+            
+          }
+
+    }
+}

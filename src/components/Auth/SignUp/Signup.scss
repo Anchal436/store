@@ -1,0 +1,14 @@
+@import '../../../assets/styles/mixins';
+@import '../../../assets/styles/variables';
+
+// .MuiMobileStepper-progress {
+//     width: 100% !important;
+// }
+.color-btn-img{
+    // @include justifyCenter(row,);
+    background-color: $btn1Bg;
+    input{
+        // width: 100%;
+        @include btn(transparent,$btn1Text);
+    }
+}

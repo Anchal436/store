@@ -1,0 +1,12 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,qBAAqB,CAAA;EACjB,MAAM,EAAE,CAAC;CAMZ;;AAPD,AAEI,qBAFiB,CAEjB,EAAE,CAAA;EACE,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,IAAI;EACb,SAAS,EAAE,MAAM;CACpB;;AAEL,AAAA,sBAAsB,CAAA;EAClB,OAAO,EAAE,IAAI;EACb,OAAO,EAAE,IAAI;EACb,SAAS,EAAE,CAAC;EACZ,cAAc,EAAE,MAAM;EACtB,eAAe,EAAE,MAAM;EACvB,WAAW,EAAE,MAAM;CACtB",
+    "sources": [
+        "OrderHistory.scss",
+        "../../assets/styles/_mixins.scss",
+        "../../assets/styles/_variables.scss",
+        "../../assets/styles/_variables.scss"
+    ],
+    "names": [],
+    "file": "OrderHistory.css"
+}

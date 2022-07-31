@@ -1,0 +1,140 @@
+@import '../../../assets/styles/mixins';
+@import '../../../assets/styles/variables';
+
+
+
+.home-page-nav-bar{
+    top:0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color:white;
+    background-color: transparent;
+    z-index: 10;
+    padding: 2% 15%;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    .cart-div{
+        display: flex;
+        align-items: center;
+        background-color: transparent;
+        border: none;
+        height: 100%;
+        padding: 6px;
+        color: white;
+        position: relative;
+        svg{
+            width: 30px;
+            height: 30px;
+        }
+        span{
+            z-index: 1;
+            position: absolute;
+            top: -8px;
+            right: 0;
+            background-color: red;
+            padding: 5px;
+            border-radius: 50%;
+            color: black;
+            font-size: 0.7rem;
+        }
+    }
+    @media (max-width:600px) {
+        
+        top:0;
+        width: 100%;
+        padding:10px;
+        .cart-div{
+            margin: 0 ;
+        }
+    }
+    
+}
+
+.public-page-search-div{
+    
+    align-items: center;
+    
+    
+    .search-result-div{
+        overflow-y: scroll;
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        
+        position: absolute;
+        background-color: $publicPageSecondaryBgColor;
+        top: 100%;
+        left: auto;
+        @media(max-width:600px){
+            width: 100%;
+            left: 0;
+        }
+        form{
+            display: flex;
+            width: 100%;
+            left: 0;
+            background: rgba(black,0.6);
+            z-index: 5;
+            input {
+                padding: 10px;
+                border: none;
+                border: 1px solid gainsboro;
+                width: 100%;
+                &:focus{
+                    outline: none;
+ 
+                }
+            }
+            button{
+                background: none;
+                border: none;
+                display: flex;
+                align-items: center;
+                flex-direction: row-reverse;
+                svg{
+                    color: white;
+                }
+            }
+        }
+
+        
+        
+        .search-row{
+            background-color: transparent;
+            border: none;
+            border-bottom: 1px solid gainsboro;
+            padding: 5px;
+            padding-left: 10px;
+            text-align: left;
+            transition: all 0.3s;
+            p{
+                margin: 0;
+                color: #443f3f;
+            }
+            &:hover{
+                p{
+                    color: black;
+                }
+            }
+        }
+    }
+    @media( max-width : 600px){
+        background: transparent;
+        
+        form{
+            input {
+                background-color: transparent;
+                
+                width: 100%;
+                
+                &::placeholder{
+                    color: white;
+                }
+            }
+            button{
+                color: white;
+            }
+        }
+    }
+}

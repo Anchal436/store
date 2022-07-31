@@ -1,0 +1,22 @@
+.color-btn-img {
+  background-color: #0095f6;
+}
+
+.color-btn-img input {
+  background-color: transparent;
+  border: none;
+  color: white;
+  padding: 3px 12px;
+  font-size: 0.95rem;
+  border-radius: 5px;
+  font-weight: lighter;
+  cursor: pointer;
+  -webkit-transition: all  0.5s;
+  transition: all  0.5s;
+}
+
+.color-btn-img input:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+  color: black;
+}
+/*# sourceMappingURL=Signup.css.map */

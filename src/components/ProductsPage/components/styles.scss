@@ -1,0 +1,309 @@
+@import '../../../assets/styles/mixins';
+@import '../../../assets/styles/variables';
+
+// CreateProduct.js
+.add-new-product{
+    background-color: red;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+    opacity: 0;
+    // z-index: 100;
+}
+.create-product-form{
+    width: 600px;
+    @media (max-width:600px) {
+        width: auto;
+    }
+}
+.size{
+    border: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    border-radius: 5px;
+    min-width: 60px;
+    text-align: center;
+    margin: 0 10px;
+    p{
+        margin: 0;
+        font-weight: bold;
+        font-size: 1rem;
+        margin: 0 8px;
+    }
+    svg{
+        width: 20px;
+        cursor: pointer;
+        
+        background-color: $primaryColor;
+        color:white;
+    }
+}
+.dyna-flex{
+    display: flex;
+    @media (max-width:600px) {
+        flex-direction: column;
+    }
+}
+.product-img-add-img-btn{
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    border: 1px solid black;
+    background-color: rgba(black,0.1) ;
+    border-radius: 20px;
+    transition: all 0.5s;
+    margin: auto;
+    svg{
+        width: 50px;
+        height: 50px;
+        color: $primaryColor;
+    }
+    &:hover{
+        transform: scale(1.1);
+    }
+}
+.product-admin-img-div{
+    position: relative;
+    min-width: 150px;
+    height: 100%;
+    
+    margin:auto 10px;
+    
+    // flex-grow: 1;
+    img{
+        width: 200px;
+        height: auto;
+        // margin: 10px;
+    }
+    button{
+        width: 30px;
+        height: 30px;
+        border: 1px solid $primaryColor;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 50; 
+        background: $primaryColor;
+        
+        svg{
+            width: 15px;
+            color:white;
+            height: 15px;
+        }
+    }
+    
+}   
+.uploding-loader{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    // filter: blur(5px);
+    background: rgba(black,0.6);
+    
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .retry-button{
+      width: auto;
+      height: auto;
+      border: 1px solid #0095f6;
+      position: relative;
+      top: auto;
+      right: auto;
+       z-index: 50; 
+      background: $primaryColor;
+      cursor: pointer;
+      // border:2px solid white;
+      border-radius: 20px;
+      color:white;
+      font-weight: bold;
+      padding:10px 20px;
+      
+  
+    }
+  }
+
+//product.js
+.admin-product{
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    background-color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .resell-div{
+        font-size: 0.75rem;
+        padding: 5px;
+        background-color: $primaryColor;
+        color: white;
+    }
+    img{        
+        max-height: 130px;
+        width: auto;    
+    }
+    .product-pricing{
+        h3{
+            text-decoration: none;
+            margin: 0;
+            padding:10px 0 ;
+
+        }
+        b{
+            color: red;
+            font-size: 1.2rem;
+        }
+    }
+    .feature-icon{
+        position: absolute;
+        color: #0095f6;
+        right: 5px;
+        top: 5px;
+        
+    }
+    @media (max-width:600px){
+        width: 40%;
+        
+        margin: 10px;
+        .product-header-img{
+            img{
+                width: auto;
+                max-width: 100%;
+                height: 100px;
+            }
+        }
+    }
+}
+
+//InfiniteScrollProducts.js
+.admin-page-categories-div{
+    display: flex;    
+    align-items: center;
+    
+    margin: 20px 0;
+    justify-content: flex-end;
+    .togel-btn{
+        padding:10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        overflow-wrap: break-word;
+        border:1px solid $primaryColor;
+        color: $primaryColor;
+        border-radius: 5px;
+        margin:0 10px;
+        flex-grow: 1;
+        text-align: center;
+    }
+    .category-fixed{
+        padding:10px;
+        overflow-wrap: break-word;
+        background-color: $primaryColor;
+        border:none;
+        color:white;
+        border-radius: 5px;
+        margin:0 10px;
+    }
+}
+.admin-page-categories{
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    img{
+        max-height: 110px;
+        width: auto;
+    }
+    .category{
+        padding: 10px;
+        background-color: transparent;
+        border:1px solid $primaryColor;
+        color:$primaryColor;
+        font-weight: bold;
+        border-radius: 5px;
+        margin: 8px;
+    }
+}
+
+// Category.js
+.admin-category{
+    margin: 10px;
+    background-color: white;
+    text-align: center;
+    .content{
+        width: 150px;
+        height: 150px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        overflow: hidden;
+        .category-text{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+    }
+    .edit-btn{
+        background-color: $primaryColor;
+        width: 100%;
+        color: white;
+        font-weight: 500;
+        padding: 5px;
+
+    }
+    
+    @media (max-width:600px) {
+        width:45% ;
+        margin: 8px 0;
+        img{
+            width: 100%;
+        }
+        
+    }
+}
+.change-category-img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    img{
+        max-height: 200px ;
+    }
+    button{
+        color: $primaryColor;
+        font-weight: 500;
+        letter-spacing: 1px;
+        text-decoration: underline;
+    }
+}
+
+//Notification.js
+.notification-div{
+    width: 100%;
+    background-color: white;
+    margin: 5px 0;
+    border-bottom: 1px solid gray;
+    button{
+        width: 100%;
+        height:100%;
+        padding: 20px 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .unread{
+        width:  8px;
+        height: 8px;
+        border-radius: 50%;
+        background-color: red;
+    }
+}

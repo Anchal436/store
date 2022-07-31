@@ -1,0 +1,88 @@
+.public-page-footer {
+  background-color: #fff;
+  padding: 10px 0;
+  bottom: 0;
+  position: relative;
+  z-index: 2;
+}
+
+@media (max-width: 600px) {
+  .public-page-footer {
+    text-align: center;
+  }
+}
+
+.public-page-footer .footer-logo {
+  padding-bottom: 5px;
+}
+
+.public-page-footer .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px 50px;
+}
+
+.public-page-footer .content small {
+  max-width: 200px;
+  margin: 5px;
+  display: block;
+}
+
+@media (max-width: 600px) {
+  .public-page-footer .content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .public-page-footer .content small {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.public-page-footer .footer-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px 0;
+}
+
+.public-page-footer .footer-link img {
+  width: auto;
+  height: 40px;
+}
+
+.public-page-footer .footer-payment-options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin: auto;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: white;
+}
+
+.public-page-footer .footer-payment-options .payment-option img {
+  width: 40px;
+  margin: 0 10px;
+}
+/*# sourceMappingURL=PublicFooter.css.map */

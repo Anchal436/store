@@ -1,0 +1,220 @@
+@import './assets//styles/variables';
+@import './assets/styles/mixins';
+@import url('https://fonts.googleapis.com/css?family=Comfortaa|Comic+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fondamento&display=swap');
+@import './assets/styles/fonts/FlandersArtSans-Medium.ttf';
+
+* {
+  
+  font-family: 'Heebo',  sans-serif;
+  scroll-behavior: smooth;
+  
+  // box-sizing: content-box;
+}
+
+
+.vertical-align{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+}
+.subheading{
+  color: $secondaryTextColor;
+  font-size: $subHeadingTextSize;
+}
+.heading{
+  font-family: $headingFont;
+  // font-size: 5rem;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+button{
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+.err-txt{
+  font-size: $errTextSize;
+  color: $errorTextColor;
+}
+.small-txt{
+  font-size: $errTextSize;
+  color: $secondaryTextColor;
+}
+.main-div-width{
+  width: $mainDivWidth;
+  // min-height: 100vh;
+  margin:0 auto ;
+  
+}
+.gradientbg{
+  background-color : #b8c6db;
+  background-image: linear-gradient(315deg, #b8c6db 0%, #f5f7fa 74%);
+  
+
+}
+
+.nav-margin{
+  margin-top:0;
+  @media (max-width: 600px){
+    margin-top:$navHeight; 
+  }
+}
+.admin-bg {
+  background-color: rgba(0, 0, 0, 0.05);
+  min-height: 100vh;
+  margin-left: 150px;
+  article {
+    flex: 62%;
+  }
+  @media (max-width:600px){
+      margin-left: 0px;
+      & article{
+          width: 100%;
+      }
+  }
+}
+.admin-home-page{
+  width:45%;
+  
+  position: relative;
+  
+  @media (max-width:600px){
+      width:100%;
+  }
+}
+.hover-color-change{
+  color:gray;
+  transition: all  0.5s !important;
+  &:hover{
+    color:black;
+  }
+}
+.logo{
+  width: 6rem;
+  height: 6rem;
+  margin: 0 auto;
+}
+.app-heading{
+  margin:auto;
+  color: rgb(255, 0, 119);
+  font-weight: bolder;
+  font-family: $headingFont;
+}
+.medium-txt{
+  font-size: 1.2rem;
+}
+.small-txt{
+  font-size: 0.8rem;
+}
+.large-txt{
+  font-size:1.6rem;
+}
+.effect-btn{
+  @include plainbtn();
+  border: 1px solid wheat;
+  padding: 5px 15px;
+  color: wheat;
+  font-weight: bold;
+  &:hover{
+    background-color: wheat;
+    color: $secondaryTextColor;
+  }
+}
+.color-btn{
+  @include btn($btn1Bg,$btn1Text);
+  padding: 10px ;
+  
+}
+.green-btn{
+  @include btn($tertiaryBtnBgColor,$btn1Text);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn{
+  outline: none;
+  border:none;
+  @include plainbtn();
+  padding: 10px ;
+
+  // &:hover{
+  //     color: $hoveredTextColor;
+  // }
+}  
+
+
+.hidden-btn{
+  position: absolute;
+  background-color: red;
+  width: 100%;
+  height: 100%;
+  top:0;
+  left:0;
+  opacity: 0;
+
+}
+
+.dyna-flex{
+  display: flex;
+  @media (max-width:600px) {
+    flex-direction: column;
+  }
+}
+.dyna-width{
+  width: 80%;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  @media (max-width:600px){
+      width: 90%;
+  }
+}
+.dyna-width-90{
+  width: 95%;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  @media (max-width:600px){
+      width: 90%;
+  }
+}
+.dialog-details-top-bar{
+  display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $primaryColor;
+    padding:5px 10px;
+    color: white;
+    button{
+        border:1px solid whitesmoke;
+        padding: 10px;
+        border-radius: 10px;
+        
+        background: none;
+        color: white;
+        font-weight: bold;
+        // font-size: 1.3rem;
+    }
+}
+
+.Toastify__toast{
+  margin-top: 70px;
+}
+.Toastify__toast--info {
+  background-color: $secondaryColor;
+}
+.react-transform-component {
+  margin: auto !important;
+}
+
+.disabled-btn{
+  background-color: #89b0eb;
+}
+.slide{
+  background-color: white !important;
+}

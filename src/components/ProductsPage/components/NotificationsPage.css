@@ -1,0 +1,111 @@
+.notification-div {
+  width: 100%;
+  color: #5f5b5b;
+}
+
+.notification-div .market-place-content-div .reselling-product-div {
+  width: 100%;
+  max-width: 400px;
+  overflow: hidden;
+  background-color: white;
+  border: 1px solid #d4d1d1;
+  border-radius: 3px;
+  margin: 10px auto;
+}
+
+.notification-div .market-place-content-div .reselling-product-div .product-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px;
+  font-size: 1rem;
+  border-bottom: 1px solid #d4d1d1;
+}
+
+.notification-div .market-place-content-div .reselling-product-div .product-header .seller-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.notification-div .market-place-content-div .reselling-product-div .product-header .seller-div .seller-logo {
+  width: 35px;
+  height: 35px;
+  padding: 3px;
+  border: 2px solid #d4d1d1;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.notification-div .market-place-content-div .reselling-product-div .product-header .seller-div .seller-name {
+  margin: 0 5px;
+  font-size: 0.9rem;
+}
+
+.notification-div .market-place-content-div .reselling-product-div .product-header .margin {
+  background-color: #0095f6;
+  padding: 5px;
+  color: white;
+  font-size: 0.8rem;
+  border-radius: 5px;
+  height: 100%;
+}
+
+.notification-div .market-place-content-div .reselling-product-div .product-img-carousel {
+  height: 180px;
+}
+
+.notification-div .market-place-content-div .reselling-product-div .product-img-carousel img {
+  width: auto;
+  max-height: 180px;
+}
+
+.notification-div .market-place-content-div .reselling-product-div .product-footer {
+  width: 100%;
+}
+
+.notification-div .market-place-content-div .reselling-product-div .product-footer .content {
+  width: 100%;
+  padding: 0 10px;
+  overflow-wrap: anywhere;
+  text-align: right;
+}
+
+.notification-div .market-place-content-div .reselling-product-div .product-footer .content b {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.notification-div .market-place-content-div .reselling-product-div .product-footer .content p {
+  margin: 0;
+  font-size: 0.8rem;
+}
+
+.notification-div .market-place-content-div .reselling-product-div .product-footer .content .show-more {
+  outline: none;
+  color: #5f5b5b;
+  font-size: 0.7rem;
+  text-decoration: none;
+}
+
+.notification-div .market-place-content-div .reselling-product-div .product-footer button {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  font-size: 0.9rem;
+  padding: 10px 0;
+  color: #0095f6;
+  font-weight: 500;
+  border-top: 1px solid #d4d1d1;
+}
+/*# sourceMappingURL=NotificationsPage.css.map */

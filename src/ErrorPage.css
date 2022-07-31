@@ -1,0 +1,43 @@
+.error-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  background-color: #0095f6;
+}
+
+.error-page .content {
+  width: 50%;
+  text-align: center;
+  background-color: white;
+  padding: 50px;
+  border-radius: 10px;
+}
+
+@media (max-width: 600px) {
+  .error-page .content {
+    width: 95%;
+    padding: 50px 10px;
+  }
+}
+
+.error-page .content a {
+  font-weight: bolder;
+}
+
+.error-page .content .button {
+  color: black;
+  font-weight: bold;
+  border: 1px solid #0095f6;
+  padding: 10px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 5px;
+}
+/*# sourceMappingURL=ErrorPage.css.map */

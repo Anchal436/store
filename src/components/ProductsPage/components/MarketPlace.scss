@@ -1,0 +1,111 @@
+@import '../../../assets/styles/mixins';
+@import '../../../assets/styles/variables';
+
+$marketPlacePrimaryColor: white;
+$marketPlaceSecondaryColor: rgb(212, 209, 209);
+$marketPlaceFontColor: #5f5b5b;
+.market-place-div{
+    width: 100%;
+    color: $marketPlaceFontColor;
+    .market-place-content-div{
+        .reselling-product-div{
+            width: 100%;
+            max-width: 400px;
+            overflow: hidden;
+            background-color: $marketPlacePrimaryColor;
+            border: 1px solid $marketPlaceSecondaryColor;
+            border-radius: 3px;
+            margin:10px auto;
+            .product-header{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 5px;
+                border-bottom: 1px solid $marketPlaceSecondaryColor;
+                .seller-div{
+                    display: flex;
+                    align-items: center;
+                    .seller-logo{
+                        width: 35px;
+                        height: 35px;
+                        padding: 3px;
+                        border: 2px solid $marketPlaceSecondaryColor;
+                        border-radius: 50%;
+                        overflow: hidden;
+                    }
+                    .seller-name{
+                        margin: 0 5px;
+                        font-size: 1rem;
+                    }
+
+                }
+                .margin{
+                    background-color: $primaryColor;
+                    padding: 5px;
+                    color: white;
+                    font-size: 0.8rem;   
+                    border-radius: 5px;
+                    height: 100%;
+                    
+                }
+                .your-margin{
+                    background-color: $secondaryColor;
+                } 
+            }
+            .product-img-carousel{
+                height: 180px;
+                img{
+                    width: auto;
+                    max-height: 180px;
+                }
+            }
+            .product-footer{
+                width: 100%;
+                .content{
+                    width: 100%;
+                    padding: 0 10px;
+                    overflow-wrap: anywhere;
+                    text-align: left;
+                    b{
+                        font-size: 1.2rem;
+                        font-weight: 700;
+                    }
+                    p{
+                        margin: 0;
+                        font-size: 0.88rem;
+                        
+                    }
+                    .show-more{
+                        outline: none;
+                        color:$primaryColor;
+                        font-size: 0.8rem;
+                        text-decoration: none;
+                    }
+                }
+                
+            }
+            .buttons{
+                button{
+                    width: 100%;
+                    height: 100%;
+                    background: transparent;
+                    border: none;
+                    font-size: 0.9rem;
+                    padding: 10px 0;
+                    color: $primaryColor;
+                    font-weight: 500;
+                    border-top: 1px solid $marketPlaceSecondaryColor;
+                    font-weight: bolder;
+                }
+                .remove{
+                    color: red;
+                    
+                }
+                .own-product{
+                    color: $secondaryColor;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,27 @@
+.bottom-navigation-tab-icon {
+  position: relative;
+}
+
+.bottom-navigation-tab-icon img {
+  width: 25px;
+}
+
+.bottom-navigation-tab-icon .unread-notification-num {
+  position: absolute;
+  background-color: red;
+  color: white;
+  padding: 5px;
+  border-radius: 50%;
+  font-weight: bold;
+  top: -5px;
+  right: -10px;
+  font-size: 0.75rem;
+  margin: 0;
+}
+
+@media (max-width: 600px) {
+  .bottom-navigation-tab-icon {
+    width: 25px;
+  }
+}
+/*# sourceMappingURL=ProductsPage.css.map */

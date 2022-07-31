@@ -1,0 +1,405 @@
+.add-new-product {
+  background-color: red;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.create-product-form {
+  width: 600px;
+}
+
+@media (max-width: 600px) {
+  .create-product-form {
+    width: auto;
+  }
+}
+
+.size {
+  border: 2px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  overflow: hidden;
+  border-radius: 5px;
+  min-width: 60px;
+  text-align: center;
+  margin: 0 10px;
+}
+
+.size p {
+  margin: 0;
+  font-weight: bold;
+  font-size: 1rem;
+  margin: 0 8px;
+}
+
+.size svg {
+  width: 20px;
+  cursor: pointer;
+  background-color: #0095f6;
+  color: white;
+}
+
+.dyna-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (max-width: 600px) {
+  .dyna-flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.product-img-add-img-btn {
+  width: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100px;
+  border: 1px solid black;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  margin: auto;
+}
+
+.product-img-add-img-btn svg {
+  width: 50px;
+  height: 50px;
+  color: #0095f6;
+}
+
+.product-img-add-img-btn:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.product-admin-img-div {
+  position: relative;
+  min-width: 150px;
+  height: 100%;
+  margin: auto 10px;
+}
+
+.product-admin-img-div img {
+  width: 200px;
+  height: auto;
+}
+
+.product-admin-img-div button {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #0095f6;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 50;
+  background: #0095f6;
+}
+
+.product-admin-img-div button svg {
+  width: 15px;
+  color: white;
+  height: 15px;
+}
+
+.uploding-loader {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.uploding-loader .retry-button {
+  width: auto;
+  height: auto;
+  border: 1px solid #0095f6;
+  position: relative;
+  top: auto;
+  right: auto;
+  z-index: 50;
+  background: #0095f6;
+  cursor: pointer;
+  border-radius: 20px;
+  color: white;
+  font-weight: bold;
+  padding: 10px 20px;
+}
+
+.admin-product {
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+  background-color: white;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.admin-product .resell-div {
+  font-size: 0.75rem;
+  padding: 5px;
+  background-color: #0095f6;
+  color: white;
+}
+
+.admin-product img {
+  max-height: 130px;
+  width: auto;
+}
+
+.admin-product .product-pricing h3 {
+  text-decoration: none;
+  margin: 0;
+  padding: 10px 0;
+}
+
+.admin-product .product-pricing b {
+  color: red;
+  font-size: 1.2rem;
+}
+
+.admin-product .feature-icon {
+  position: absolute;
+  color: #0095f6;
+  right: 5px;
+  top: 5px;
+}
+
+@media (max-width: 600px) {
+  .admin-product {
+    width: 40%;
+    margin: 10px;
+  }
+  .admin-product .product-header-img img {
+    width: auto;
+    max-width: 100%;
+    height: 100px;
+  }
+}
+
+.admin-page-categories-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 20px 0;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.admin-page-categories-div .togel-btn {
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow-wrap: break-word;
+  border: 1px solid #0095f6;
+  color: #0095f6;
+  border-radius: 5px;
+  margin: 0 10px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  text-align: center;
+}
+
+.admin-page-categories-div .category-fixed {
+  padding: 10px;
+  overflow-wrap: break-word;
+  background-color: #0095f6;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  margin: 0 10px;
+}
+
+.admin-page-categories {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.admin-page-categories img {
+  max-height: 110px;
+  width: auto;
+}
+
+.admin-page-categories .category {
+  padding: 10px;
+  background-color: transparent;
+  border: 1px solid #0095f6;
+  color: #0095f6;
+  font-weight: bold;
+  border-radius: 5px;
+  margin: 8px;
+}
+
+.admin-category {
+  margin: 10px;
+  background-color: white;
+  text-align: center;
+}
+
+.admin-category .content {
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  overflow: hidden;
+}
+
+.admin-category .content .category-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.admin-category .edit-btn {
+  background-color: #0095f6;
+  width: 100%;
+  color: white;
+  font-weight: 500;
+  padding: 5px;
+}
+
+@media (max-width: 600px) {
+  .admin-category {
+    width: 45%;
+    margin: 8px 0;
+  }
+  .admin-category img {
+    width: 100%;
+  }
+}
+
+.change-category-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.change-category-img img {
+  max-height: 200px;
+}
+
+.change-category-img button {
+  color: #0095f6;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-decoration: underline;
+}
+
+.notification-div {
+  width: 100%;
+  background-color: white;
+  margin: 5px 0;
+  border-bottom: 1px solid gray;
+}
+
+.notification-div button {
+  width: 100%;
+  height: 100%;
+  padding: 20px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.notification-div .unread {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: red;
+}
+/*# sourceMappingURL=styles.css.map */

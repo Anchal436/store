@@ -1,0 +1,174 @@
+@import '../../../assets/styles/mixins';
+@import '../../../assets/styles/variables';
+
+.sold-product-div{
+    border: 1px solid $primaryColor;
+    border-radius: 10px;
+    margin: 10px;
+    background-color: white;
+    width: 95%;
+    margin:10px auto;
+    p{
+        margin: 0;
+        padding: 5px;
+    }
+    .cart-details{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 40%;
+        b{
+            font-size: 1.5rem;
+            color: $primaryColor;
+        }
+    }   
+}
+
+.sold-product-details-order-summary{
+        width: 70%;
+        overflow: hidden;
+        margin: auto;
+        border: 1px solid $primaryColor;
+        
+        tr{
+            text-align: center;
+        }
+        .cart-details-cart-item{
+            // display: flex;
+            align-items: center;
+            width: 100%;
+            justify-content: space-between;
+            text-align: center;
+            h3{
+                font-size: 1rem;
+                margin: 0 10px;
+                width: 20%;
+                text-align: center;
+                padding: 5px;
+            }
+            .order-header{
+                width: 25%;
+                h3{
+                    width: 100%;
+                }
+                .details{
+                    // background-color: rgb(221, 224, 238);
+                    padding: 5px;
+                    color: rgb(56, 54, 59);
+                    overflow-wrap: anywhere;
+                    
+                    text-align: center;
+                    p{
+                        max-height:100px ;
+                        margin: 0;
+                        overflow-y: scroll;
+                        &::-webkit-scrollbar {
+                            width: 0px;
+                            // display: none;
+                            background: transparent; /* make scrollbar transparent */
+                        }
+                    }
+                }
+            }
+            
+        }
+        .total{
+            border-bottom: 1px solid black;
+            border-top: 1px solid black;
+            background-color: $primaryColor;
+            color:white;
+            h3{
+                font-weight: 300;
+            }
+        }
+        @media (max-width:600px){
+            width: 100%;
+        }
+    
+}
+//CReateShipment.js
+.create-shipment-offer{
+    position: absolute;
+    bottom: 12%;
+    right : 5px;
+    width: 80px;
+    
+    padding: 5px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: red;
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both infinite;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+    button{
+        border-radius: 50%;
+        color: white;
+        letter-spacing: 1px;
+        font-weight: bolder;
+    }
+    
+}
+  
+@keyframes shake {
+    10%, 90% {
+        transform: translate3d(-1px, 0, 0);
+    }
+    
+    20%, 80% {
+        transform: translate3d(1px, 0, 0);
+    }
+    
+    30%, 50%, 70% {
+        transform: translate3d(-2px, 0, 0);
+    }
+    
+    40%, 60% {
+        transform: translate3d(2px, 0, 0);
+    }
+    }
+.create-shipment-courier-div{
+    border:1px solid ;
+    width: 48%;
+    padding: 5px;
+    margin:5px;
+    border-radius: 5px;
+    
+    h5{
+        font-size: 1.1rem;
+        text-align: center;
+        border-bottom: 1px solid;
+        
+        color: $primaryColor;
+        margin:0;
+    }
+    p{
+        margin: 0;
+        font-size: 0.8rem;
+    }
+    .rate{
+        text-align: right;
+        display: flex;
+        justify-content: flex-end;
+        color: $secondaryColor;
+        font-size: 1.3rem;
+        h4{
+            margin: 0.6rem 0;
+        
+        }
+        
+    }
+    button{
+        padding:10px;
+        color:white;
+        border-radius: 5px;
+        width: 100%;
+        background:$primaryColor;
+        font-weight: bold;
+    }
+    @media (max-width:600px) {
+        width: 100%;
+    }
+}
+

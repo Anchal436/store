@@ -1,0 +1,161 @@
+// @import '../../../assets/styles/mixins';
+// @import '../../../assets/styles/variables';
+
+
+// .home-page-top-header{
+//     background-color:  $homepageBackgroundColor;
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+//     padding: 30px 50px;
+//     width: 100%;
+//     margin: 0 auto;
+//     position: relative;
+//     z-index: 2;
+//     .right-div{
+//         .shipping-area{
+//             color: $publicPageThemeColor;
+//             text-align: right;
+//             font-size: 0.8rem;
+//             margin: 20px;
+//         }
+//         .bottom-div{
+//             display: flex;
+//             justify-content: space-between;
+//             align-items: center;
+//             .cart-div{
+//                 display: flex;
+//                 align-items: center;
+//                 background-color: $publicPageSecondaryBgColor;
+//                 border: none;
+//                 height: 100%;
+//                 margin: 0 10px ;
+//                 padding: 6px;
+//                 color: black;
+//             }
+//         }
+//     }
+//     @media(max-width : 600px){
+//         width: 100%;
+//         padding: 50px;
+//         flex-direction: column;
+//         justify-content: space-between;
+//         .left-div{
+//             margin: auto;
+//             display: flex;
+//             justify-content: center;
+//         }
+        
+//     }
+// }
+// .home-page-nav-div{
+//     top:0px;
+//     padding: 15px 0; 
+//     width: 100%;  
+//     display: flex;
+//     align-items: center;
+//     justify-content: space-evenly;
+//     color:white;
+//     background-color: $publicPageThemeColor;
+//     z-index: 10;
+//     position: relative;
+//     .cart-div{
+//         display: flex;
+//         align-items: center;
+//         background-color: transparent;
+//         border: none;
+//         height: 100%;
+//         margin: 0 10px ;
+//         padding: 6px;
+//         color: white;
+//     }
+//     @media (max-width:600px) {
+//         position: -webkit-sticky; /* Safari */
+//         position: sticky;
+//         top:0;
+//         .cart-div{
+            
+//             margin: 0 ;
+            
+//         }
+//     }
+    
+// }
+
+// .search-div{
+//     display: flex;
+//     align-items: center;
+//     background-color: $publicPageSecondaryBgColor;
+//     position: relative;
+    
+//     form{
+//         display: flex;
+//         input {
+//             background-color: $publicPageSecondaryBgColor;
+//             padding: 10px;
+//             border: none;
+//             &:focus{
+//                 outline: none;
+//                 border: none;
+//             }
+//         }
+//         button{
+//             background: none;
+//             border: none;
+//             display: flex;
+//             align-items: center;
+//             flex-direction: row-reverse;
+//         }
+//     }
+//     .search-result-div{
+//         max-height: 500px;
+//         overflow-y: scroll;
+//         display: flex;
+//         flex-direction: column;
+//         width: 100%;
+//         position: absolute;
+//         background-color: $publicPageSecondaryBgColor;
+//         border: 1px solid gainsboro;
+//         border-bottom-left-radius: 10px;
+//         border-bottom-right-radius: 10px;
+//         top: 100%;
+//         left: 0;
+        
+//         .search-row{
+//             background-color: transparent;
+//             border: none;
+//             border-bottom: 1px solid gainsboro;
+//             padding: 5px;
+//             padding-left: 10px;
+//             text-align: left;
+//             transition: all 0.3s;
+//             p{
+//                 margin: 0;
+//                 color: #443f3f;
+//             }
+//             &:hover{
+//                 p{
+//                     color: black;
+//                 }
+//             }
+//         }
+//     }
+//     @media( max-width : 600px){
+//         background: transparent;
+//         width: 50%;
+//         form{
+//             input {
+//                 background-color: transparent;
+//                 color: white;
+//             width: 100%;
+                
+//                 &::placeholder{
+//                     color: white;
+//                 }
+//             }
+//             button{
+//                 color: white;
+//             }
+//         }
+//     }
+// }

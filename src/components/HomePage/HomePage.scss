@@ -1,0 +1,78 @@
+@import '../../assets/styles/mixins';
+@import '../../assets/styles/variables';
+
+.home-page-div{
+  @include justifyCenter(column,space-between,center);
+  margin-top: 20px;
+}
+.home-page-bg{
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  // justify-content: space-between;
+}
+
+.link{
+  display: flex;
+  position: relative;
+  justify-content:space-between;
+  align-items: center;
+  border: 2px solid white;
+  cursor: pointer;
+  text-align: center;
+  padding: 0px 10px;
+  color:white;
+  padding: 10px;
+  background-color: transparent;
+  font-weight: bold;
+  text-decoration: none;
+  margin:15px auto;
+  border-radius: 25px;
+  transition: all  0.25s ease !important;
+  img{
+  
+      position: absolute;
+  
+      top :50%;
+      transform: translateY(-50%);
+      height: 40px;
+  
+  }
+  p{
+      font-size: $normalTextSize;
+      padding:5px ;
+      margin-top: auto;
+      margin-bottom: auto;
+  }
+  &:hover{
+      background-color: white !important;
+  
+      
+      p{
+        color: black;
+      }
+      text-decoration:none;
+  }
+  @media (max-width:600px) {
+    &{
+      border-radius: 20px;
+    }
+    
+  }
+}
+.carousel-img-btn{
+  max-height: 200px;
+  background: white;
+  border: none;
+  position: relative;
+  width: auto;
+  img{
+    max-height: 400px;
+    width: auto;
+    margin: auto;
+  }
+
+}

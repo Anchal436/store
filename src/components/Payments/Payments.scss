@@ -1,0 +1,76 @@
+@import '../../assets/styles/mixins';
+@import '../../assets//styles//variables';
+
+.payments-top-div{
+    text-align: center;
+    width: 100%;
+    border-bottom: 3px solid $primaryColor;
+    margin: 0;
+}
+.redeem-payment-history-div{
+    border-bottom: 3px solid $primaryColor;
+    h2{
+        text-decoration: underline;
+    }
+    ol{
+        padding: 0;
+    }
+    .redeem-payment-history{
+        h3  {
+            margin: 0;
+        }
+        p{
+            margin: 0;
+        }
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid black;
+    }
+}
+.payments-left-div{
+    width: 70%;
+    margin: 0 auto;
+    // border-right: 3px solid $primaryColor;
+    // margin: auto;
+    padding: 0 20px;
+    @media (max-width: 600px){
+        width: 90%;
+        margin: auto;
+        h1{
+            font-size: 1.5rem;
+        }
+    }
+}
+.payments-right-div{
+    padding: 0 20px;
+    width: 50%;
+    @media (max-width: 600px){
+        width: 90%;
+        margin: auto;
+    }
+    
+}
+
+.payment-link{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+    padding: 0 10px;
+    border: 1px solid $primaryColor;
+    border-radius: 10px;
+    img{
+        width: 60px;
+        height: auto;
+        // border: 1px solid $primaryColor;
+        padding: 0 10px;
+        
+        border-radius: 10px;
+        margin: 10px;
+    }
+    button{
+        border: none;
+
+    }
+}

@@ -1,0 +1,144 @@
+@import '../../assets/styles/mixins';
+@import '../../assets/styles/variables';
+@import url('https://fonts.googleapis.com/css2?family=Anton');
+
+.design-homepage{
+    text-align: center;
+    p{
+        margin: 0;
+        font-weight: bold;
+    }
+    .cover-photo-wrapper{
+        display: grid;
+        place-items: center;
+        .cover-photo-div{
+            margin: 5%;
+            .cover-img{
+                width: 95%;
+                position: relative;
+                button{
+                    position: absolute;
+                    right: 10px;
+                    top: 10px;
+                    background: red;
+                    color: white;
+                    padding: 5px 10px;
+                    border-radius:10px ;
+                }
+
+            }
+        }
+        .add-cover-photo{
+            position: relative;
+            margin: 20px auto;
+        }
+    }
+    .add-info-wrapper{
+        // display: grid;
+        .heading{
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 5px ;
+            button{
+                
+                
+                background: red;
+                color: white;
+                padding: 5px ;
+                border-radius:10px ;
+                margin: 0 10px;
+                svg{
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+            .line{
+                width: 20%;
+                height: 2px;
+                background-color: black;
+                margin: 5px 0;
+            }
+            h3{
+                font-weight: 100;
+                letter-spacing: 1px;
+                font-size: 1.5rem;
+                margin:  15px;
+                text-transform: uppercase;
+                font-family: 'Anton', sans-serif;
+                @media (max-width:600px) {
+                    font-size : 1.2rem;
+                }
+        
+            }
+            input{
+                border: 1px solid black;
+                background-color: transparent;
+                font-weight: 100;
+                letter-spacing: 1px;
+                font-size: 1.5rem;
+                margin:  15px;
+                text-transform: uppercase;
+                font-family: 'Anton', sans-serif;
+                border-radius: 5px;
+                padding: 5px;
+                text-align: center;
+                @media (max-width:600px) {
+                    font-size : 1.2rem;
+                }
+            }
+            
+        }
+        .info-div{
+            text-align: center;
+            padding: 0 15%;
+            @media (max-width: 600px) {
+                padding: 2%; 
+            }
+            textarea{
+                border: 1px solid black;
+                background-color: transparent;
+                font-size: 1rem;
+                width: 100%;
+                font-weight: bold;
+                padding: 5px;
+                border-radius: 5px;
+                text-align: center;
+                @media (max-width: 600px) {
+                    font-size: 0.8rem;
+                }
+            }
+            .discreption{
+                font-size: 1rem;
+                font-weight: bold;
+                overflow-wrap: break-word;
+                @media (max-width: 600px) {
+                    font-size: 0.8rem;
+                }
+            }
+        }
+        .add-temp-info{
+            // border:1px solid black ;
+            width: 95%;
+            margin: 20px auto;
+        }
+        
+        .error-btn, .green-btn{
+            width: 45% !important;
+            padding: 10px;
+            
+        }
+        .error-btn{
+            background-color: red;
+            border-radius: 5px;
+            color: white;
+    
+        }
+        .color-btn{
+            margin: 20px auto;
+        }
+        
+    }
+    
+}

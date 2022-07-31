@@ -1,0 +1,106 @@
+@import '../../assets/styles/mixins';
+@import '../../assets/styles/variables';
+@import url('https://fonts.googleapis.com/css2?family=Anton');
+
+
+.public-page{
+    
+    .heading{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 5px ;
+        .line{
+            width: 20%;
+            height: 2px;
+            background-color: black;
+            margin: 5px 0;
+        }
+        h3{
+            font-weight: 100;
+            letter-spacing: 1px;
+            font-size: 1.5rem;
+            margin:  15px;
+            text-transform: uppercase;
+            font-family: 'Anton', sans-serif;
+            @media (max-width:600px) {
+                font-size : 1.2rem;
+            }
+
+        }
+    }
+    .info-div{
+        text-align: center;
+        padding: 0 15%;
+        @media (max-width: 600px) {
+            padding: 2%; 
+        }
+        .discreption{
+            
+            font-size: 1rem;
+            font-weight: bold;
+            @media (max-width: 600px) {
+                font-size: 0.8rem;
+            }
+        }
+    }
+    .cover-photo-div{
+        margin: 2%;
+        @media (max-width: 600px) {
+            margin: 15% 0;    
+        }
+        
+        .cover-img{
+            width: auto;
+            
+        }
+    }
+    .featured-products{
+        .products{
+            display: flex;
+            padding: 5% 0;   
+            align-items: center;
+            overflow-x: scroll;
+            .public-product{
+                margin: 0 20px;
+                min-width: 200px;
+                -webkit-box-shadow: 0px 0px 21px 7px rgba(0,0,0,0.2);
+                -moz-box-shadow: 0px 0px 21px 7px rgba(0,0,0,0.2);
+                box-shadow: 0px 0px 21px 7px rgba(0,0,0,0.2);
+            }
+        }
+        .see-all{
+            padding: 10px 40px;
+            border: 1px solid black;   
+            font-family: 'Anton', sans-serif;
+            display: block;
+            margin: 10px auto;
+            left: 50%;
+            
+        }
+    }
+    .products-div{
+        display: grid;
+        place-items: center;
+        .products{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .public-product{
+            border: 1px solid #d3cfcf;
+        }
+        .see-all{
+            padding: 10px 40px;
+            border: 1px solid ;
+            align-self: center;
+            font-family: 'Anton', sans-serif;
+
+            margin: 10px ;
+            width: fit-content;
+        }
+    }
+}
+

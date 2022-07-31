@@ -1,0 +1,54 @@
+@import './variables';
+@mixin btn($backgroundcolor,$textColor) {
+    background-color: $backgroundcolor;
+    border:none;
+    color: $textColor;
+    padding: 3px 12px;
+    // margin: 0.5rem 1rem;
+    font-size: $normalTextSize;
+    border-radius: 5px;
+    font-weight: lighter;
+    cursor: pointer;
+    transition: all  0.5s;
+    &:hover{
+        
+        background-color: rgba($textColor,0.9);
+        color: rgba( $backgroundcolor,1.5);
+    }
+}
+@mixin plainbtn() {
+    background: rgba($secondarybtnBgColor,0.1);
+    padding: 5px 15px;
+    // margin: 1rem;
+    color: black;
+    font-size: $normalTextSize;
+    border-radius: 5px;
+    font-weight: lighter;
+    outline:none;
+    cursor: pointer;
+    transition: all 0.3s;
+    &:focus{
+        outline: none;
+        border: none;
+    }
+    &:hover{
+        color: white;
+        background-color: $secondarybtnBgColor;
+    }
+}
+
+@mixin justifyCenter($direction,$justify,$align) {
+    display: flex;
+    flex-direction:  $direction;
+    justify-content: $justify;
+    align-items: $align;
+    
+}
+
+@function set-notification-text-color($color) {
+    @if (lightness($color) > 50) {
+      @return #000000; // Lighter backgorund, return dark color
+    } @else {
+      @return #ffffff; // Darker background, return light color
+    }
+  } 

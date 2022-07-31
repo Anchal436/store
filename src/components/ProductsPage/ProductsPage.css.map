@@ -1,0 +1,12 @@
+{
+    "version": 3,
+    "mappings": "AAGA,AAAA,2BAA2B,CAAA;EACvB,QAAQ,EAAE,QAAQ;CAoBrB;;AArBD,AAGI,2BAHuB,CAGvB,GAAG,CAAA;EACC,KAAK,EAAE,IAAI;CACd;;AALL,AAMI,2BANuB,CAMvB,wBAAwB,CAAA;EACpB,QAAQ,EAAE,QAAQ;EAClB,gBAAgB,EAAE,GAAG;EACrB,KAAK,EAAE,KAAK;EACZ,OAAO,EAAE,GAAG;EACZ,aAAa,EAAE,GAAG;EAClB,WAAW,EAAE,IAAI;EACjB,GAAG,EAAC,IAAI;EACR,KAAK,EAAE,KAAK;EACZ,SAAS,EAAE,OAAO;EAClB,MAAM,EAAE,CAAC;CACZ;;AACD,MAAM,EAAC,SAAS,EAAE,KAAK;EAlB3B,AAAA,2BAA2B,CAAA;IAmBnB,KAAK,EAAE,IAAI;GAElB",
+    "sources": [
+        "ProductsPage.scss",
+        "../../assets/styles/_mixins.scss",
+        "../../assets/styles/_variables.scss",
+        "../../assets/styles/_variables.scss"
+    ],
+    "names": [],
+    "file": "ProductsPage.css"
+}

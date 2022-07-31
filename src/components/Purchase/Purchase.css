@@ -1,0 +1,149 @@
+.purchase-main-div {
+  min-height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  border-radius: 5px;
+}
+
+.purchase-main-div .purchase-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 80%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border: 3px solid #0095f6;
+  border-radius: 10px;
+  padding: 15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0 20px 50px 0 rgba(0, 0, 0, 0.5);
+          box-shadow: 0 20px 50px 0 rgba(0, 0, 0, 0.5);
+  background-color: white;
+  color: black;
+}
+
+.purchase-main-div .purchase-div .purchase-content-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.purchase-main-div .purchase-div .purchase-content-div h1 {
+  color: #0095f6;
+}
+
+.purchase-main-div .purchase-div .purchase-content-div .purchase-price-div {
+  z-index: 200;
+}
+
+.purchase-main-div .purchase-div .purchase-content-div .purchase-price-div h1 {
+  margin: 0;
+  font-weight: bold;
+}
+
+.purchase-main-div .purchase-div .purchase-content-div .purchase-price-div h1 span {
+  font-size: 1rem;
+}
+
+@media (max-width: 600px) {
+  .purchase-main-div .purchase-div .purchase-content-div h1 {
+    font-size: 1.3rem;
+  }
+  .purchase-main-div .purchase-div .purchase-content-div .purchase-price-div h1 {
+    color: black;
+    font-size: 1.1rem;
+  }
+}
+
+.purchase-main-div .purchase-div .purchase-total-div {
+  border-top: 1px solid gray;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.purchase-main-div .purchase-div .purchase-total-div p {
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+
+.purchase-main-div .purchase-button-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 2rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.purchase-main-div .purchase-button-div button {
+  background: none;
+  background-color: #0095f6;
+  margin: 10px;
+  width: 18rem;
+  padding: 15px;
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 3px;
+  cursor: pointer;
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+  -webkit-box-shadow: 0 20px 50px 0 rgba(0, 83, 213, 0.5);
+          box-shadow: 0 20px 50px 0 rgba(0, 83, 213, 0.5);
+}
+
+@media (max-width: 600px) {
+  .purchase-main-div .purchase-button-div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+/*# sourceMappingURL=Purchase.css.map */
